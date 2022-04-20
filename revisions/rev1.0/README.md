@@ -68,7 +68,7 @@ These headers expose the pins connected to the I2C and HSPI modules on-board of 
   - GND
 
 ## Buzzer
-On the board is present one buzzer. It is a passive piezo-electric buzzer with the appropriate driving circuit.
+On the board is present one buzzer. It is a passive piezo-electric buzzer with the appropriate driving circuit on-board.
 It is capable of reproducing tones up to 4kHz.
 
 ## GPIOs
