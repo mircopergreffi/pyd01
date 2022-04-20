@@ -48,7 +48,7 @@ The maximum resistance value is:
 The minimum resistance value is:
 `R_min[kOhm] = (V_ext[V] - 1.2V) / (5mA)`
 
-The you can choose a resistor with a standard value in between them.
+Then you can choose a resistor with a standard value in between them.
 
 ## I2C and SPI Headers
 The board has two header for digital communication. They are standard headers with a pitch of 2.54mm (0.1 inch).
