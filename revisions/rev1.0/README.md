@@ -39,14 +39,14 @@ This are outputs (OUT1, OUT2)
 
 ## Opto-coupler inputs
 The optocoupler inputs LED has a typical forward voltage of 1.2V and to fully drive it a current of 0.5mA is enough,
-but a forward current of $I_F=1mA$ is recommended. The maxium absolute forward current is 50mA, but it is recommended to keep it below 5mA.
+but a forward current of IF=1mA is recommended. The maxium absolute forward current is 50mA, but it is recommended to keep it below 5mA.
 The following formulas can be used to design the resistor.
 
 The maximum resistance value is:
-$`R_{max}[kOhm] = \frac{V_{ext}[V] - 1.2V}{I_F[mA]}`$
+`R_max[kOhm] = (V_ext[V] - 1.2V) / (IF[mA])`
 
 The minimum resistance value is:
-$`R_{min}[kOhm] = \frac{V_{ext}[V] - 1.2V}{5mA}`$
+`R_min[kOhm] = (V_ext[V] - 1.2V) / (5mA)`
 
 The you can choose a resistor with a standard value in between them.
 
