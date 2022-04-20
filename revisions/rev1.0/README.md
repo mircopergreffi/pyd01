@@ -31,10 +31,10 @@ wheter there is a low-resistance path connected to OUT5. This is useful with som
 power to the lock mechanism with pins in the door frame, when the door is opened the circuit is broken and IN5
 can detect this in order to detect the status of the door (opened or closed) without additional sensors.
 
-If you want to "claim" back IN5 you have to unsolder diode D10 (check schematics).
+If you want to "claim back" IN5 you have to unsolder diode D10 (check schematics).
 
 ## Opto-coupler outputs
-The optocouplers outputs can switch up to 35V 5mA and can resist a reverse voltage of up to 6V.
+The optocouplers outputs can switch up to 35V 5mA and can withstand a reverse voltage of up to 6V.
 This are outputs (OUT1, OUT2)
 
 ## Opto-coupler inputs
@@ -75,7 +75,7 @@ It is capable of reproducing tones up to 4kHz.
 The following table summairze all GPIOs and how they are connected on the board.
 
 | Function           | Name  | GPIO | Inverted | Need Pullup\* |
-|--------------------------------------------------------------|
+| ------------------ |:-----:|:----:| -------- | ------------- |
 | Optocoupler Input  | IN1   | 36   | Yes      | No            |
 | Optocoupler Input  | IN2   | 39   | Yes      | No            |
 | Optocoupler Input  | IN3   | 34   | Yes      | No            |
