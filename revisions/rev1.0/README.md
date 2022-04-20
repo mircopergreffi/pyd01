@@ -53,7 +53,7 @@ Then you can choose a resistor with a standard value in between them.
 ## I2C and SPI Headers
 The board has two header for digital communication. They are standard headers with a pitch of 2.54mm (0.1 inch).
 You can use these to add digital sensors and/or displays.
-These headers expose the pins connected to the I2C and HSPI modules on-board of the ESP32-S with two additional pins for 3.3V and ground.
+These headers expose the pins connected to the I2C and HSPI modules of the ESP32-S with two additional pins for 3.3V and ground.
 - I2C Header
   - 3.3V
   - SDA
