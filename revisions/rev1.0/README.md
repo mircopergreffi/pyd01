@@ -39,19 +39,19 @@ This are outputs (OUT1, OUT2)
 
 ## Opto-coupler inputs
 The optocoupler inputs LED has a typical forward voltage of 1.2V and to fully drive it a current of 0.5mA is enough,
-but a forward current of $I_F=1mA$ is recommended. The maxium absolute forward current is 50mA, but it is recommended to keep it below 5mA.
+but a forward current of IF=1mA is recommended. The maxium absolute forward current is 50mA, but it is recommended to keep it below 5mA.
 The following formulas can be used to design the resistor.
 
 The maximum resistance value is:
-$R_{max}[kOhm] = \frac{V_{ext}[V] - 1.2V}{I_F[mA]}$
+<img src="https://render.githubusercontent.com/render/math?math=R_{max}[kOhm] = \frac{V_{ext}[V] - 1.2V}{I_F[mA]}">
 
 The minimum resistance value is:
-$R_{min}[kOhm] = \frac{V_{ext}[V] - 1.2V}{5mA}$
+<img src="https://render.githubusercontent.com/render/math?math=R_{min}[kOhm] = \frac{V_{ext}[V] - 1.2V}{5mA}">
 
 The you can choose a resistor with a standard value in between them.
 
 ## I2C and SPI Headers
-The board exposes two header for digital communication. They are standard headers with a pitch of 2.54mm (0.1 inch).
+The board has two header for digital communication. They are standard headers with a pitch of 2.54mm (0.1 inch).
 You can use these to add digital sensors and/or displays.
 These headers expose the pins connected to the I2C and HSPI modules on-board of the ESP32-S with two additional pins for 3.3V and ground.
 - I2C Header
