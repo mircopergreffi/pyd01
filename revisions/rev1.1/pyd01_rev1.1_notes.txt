@@ -8,14 +8,13 @@ TODO:
   - Add resistor placeholder for Opto Outputs
 
 Changelog:
-  - Add polarity labels on EXT
-  - Add polarity label on OUT5
-  - Add polarity labels on OUT1, OUT2
-  - Add polarity labels on IN1, IN2, IN3, IN4
+  - Added polarity labels on EXT
+  - Added polarity label on OUT5
+  - Added polarity labels on OUT1, OUT2
+  - Added polarity labels on IN1, IN2, IN3, IN4
   - Added buzzer parallel resistor (680Ohm)
   - Added input resistor (4.7kOhm,250mW) (in1,in2,in3,in4)
     Input voltage range: 3.3V ~ 35V
-  - 
 ________________
 
 Validation:
