@@ -17,7 +17,7 @@
 
 ## Fix
 An external resistor needs to be soldered across the pins of the buzzer.
-![PYD01 Rev1.0 Fix](pyd01_rev1.0_fix.png)
+<img src="pyd01_rev1.0_fix.png" alt="PYD01 Rev1.0 Fix" width="200" />
 
 ## Powering the board
 The board can be powered via USB or providing an external voltage (7 ~ 28V).
