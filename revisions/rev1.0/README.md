@@ -15,6 +15,9 @@
 - 1 Buzzer
 - USB-C Port (programming and serial monitor via CH340G transceiver)
 
+## Fix
+An external resistor needs to be soldered across the pins of the buzzer.
+
 ## Powering the board
 The board can be powered via USB or providing an external voltage (7 ~ 28V).
 The latter can be useful for application where a power supply is already in use,
