@@ -1,0 +1,37 @@
++--------------+
+|    Rev1.0    |
++--------------+
+
+Validation:
+  Tested and Working:
+    - USART Communication
+    - USB Transceiver
+    - FLASH Button
+    - EN Button
+    - Wi-Fi
+    - OTA
+    - Relays (All)
+    - Switching Regulator
+    - Opto Outputs
+    - Opto Inputs
+  Tested and not Working:
+    - Buzzer (very quiet, missing parallel resistor)
+  Untested:
+    - I2C Port
+    - SPI Port
+    - External Antenna
+    - (Ambient Light Sensor)
+    - (Temperature and Humidity Sensor)
+________________
+
+Notes Rev1.0:
+  - Add short circuit protection
+  - Add reverse voltage protection
+  - Add polarity labels on EXT
+  - Add polarity label on OUT5
+  - Add polarity labels on OUT1, OUT2
+  - Add polarity labels on IN1, IN2, IN3, IN4
+  - Add input resistor for Opto Inputs
+  - Add resistor placeholder for Opto Outputs
+  - Add buzzer parallel resistor (680Ohm)
+________________

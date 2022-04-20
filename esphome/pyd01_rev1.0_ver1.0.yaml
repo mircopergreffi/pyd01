@@ -1,0 +1,165 @@
+substitutions:
+  name: "pyd01"
+
+esphome:
+  name: "${name}"
+  # Automatically add the mac address to the name
+  # so you can use a single firmware for all devices
+  name_add_mac_suffix: true
+
+  # This will allow for (future) project identification,
+  # configuration and updates.
+  project:
+    name: esphome.pyd01
+    version: "rev1.0_ver1.0"
+  
+  # Boot sound
+  on_boot:
+    then:
+      - rtttl.play: 'scale_up:d=32,o=5,b=100:c,c#,d#,e,f#,g#,a#,b'
+
+# Board configuration
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+    version: recommended
+
+# To be able to get logs from the device via serial and api.
+logger:
+
+# API is a requirement of the dashboard import.
+api:
+
+# OTA is required for Over-the-Air updating
+ota:
+  # password: ""
+
+# This should point to the public location of this yaml file.
+dashboard_import:
+  package_import_url: github://mircopergreffi/pyd01/esphome/pyd01_rev1.0_ver1.0.yaml
+
+wifi:
+  ap:
+    password: "12345678"
+
+# In combination with the `ap` this allows the user
+# to provision wifi credentials to the device.
+captive_portal:
+
+# Sets up Bluetooth LE (Only on ESP32) to allow the user
+# to provision wifi credentials to the device.
+esp32_improv:
+  authorizer: none
+
+# Sets up the improv via serial client for Wi-Fi provisioning
+improv_serial:
+
+binary_sensor:
+
+  - platform: gpio
+    id: opto_in1
+    name: "Opto IN1"
+    pin:
+      number: 36
+      inverted: true
+    filters:
+      - delayed_on: 50ms
+      - delayed_off: 50ms
+
+  - platform: gpio
+    id: opto_in2
+    name: "Opto IN2"
+    pin:
+      number: 39
+      inverted: true
+    filters:
+      - delayed_on: 50ms
+      - delayed_off: 50ms
+
+  - platform: gpio
+    id: opto_in3
+    name: "Opto IN3"
+    pin:
+      number: 34
+      inverted: true
+    filters:
+      - delayed_on: 50ms
+      - delayed_off: 50ms
+
+  - platform: gpio
+    id: opto_in4
+    name: "Opto IN4"
+    pin:
+      number: 35
+      inverted: true
+    filters:
+      - delayed_on: 50ms
+      - delayed_off: 50ms
+
+  - platform: gpio
+    id: opto_in5
+    name: "Opto IN5"
+    pin:
+      number: 25
+      mode:
+        input: true
+        pullup: true
+      inverted: true
+    filters:
+      - delayed_on: 50ms
+      - delayed_off: 50ms
+
+switch:
+  - platform: gpio
+    name: "Opto OUT1"
+    id: opto_out1
+    pin: 16
+
+  - platform: gpio
+    name: "Opto OUT2"
+    id: opto_out2
+    pin: 17
+
+  - platform: gpio
+    name: "Relay OUT3"
+    id: relay_out3
+    pin: 32
+
+  - platform: gpio
+    name: "Relay OUT4"
+    id: relay_out4
+    pin: 33
+
+  - platform: gpio
+    name: "Relay OUT5"
+    id: relay_out5
+    pin: 26
+
+  - platform: gpio
+    name: "Relay OUT7"
+    id: relay_out7
+    pin: 27
+
+  - platform: gpio
+    name: "Relay OUT8"
+    id: relay_out8
+    pin: 23
+
+  - platform: gpio
+    name: "Relay OUT9"
+    id: relay_out9
+    pin: 18
+
+  - platform: gpio
+    name: "Relay OUT10"
+    id: relay_out10
+    pin: 19
+
+output:
+  - platform: ledc
+    pin: 4
+    id: buzzer_out
+
+rtttl:
+  output: buzzer_out
