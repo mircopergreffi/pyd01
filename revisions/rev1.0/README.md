@@ -16,7 +16,7 @@
 - USB-C Port (programming and serial monitor via CH340G transceiver)
 
 ## Fix
-An external resistor needs to be soldered across the pins of the buzzer.
+An external resistor (680 Ohm) needs to be soldered across the pins of the buzzer.
 
 <img src="pyd01_rev1.0_fix.png" alt="PYD01 Rev1.0 Fix" width="400" />
 
