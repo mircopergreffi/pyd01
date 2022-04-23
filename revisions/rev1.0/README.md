@@ -27,7 +27,7 @@ or when the user wants to power the board with a battery. In this case, the on-b
 DC/DC converter will step down the voltage to 5V in order to power the whole board.
 
 ## Relays
-The relays can switch loads up to 250V and 5A (Omron G5NB-1A-E).
+The relays can switch loads up to 250VAC/5A and 30VDC/3A (Omron G5NB-1A-E).
 This are outputs (OUT3, OUT4, OUT5, OUT7, OUT8, OUT9, OUT10)
 
 Pay attention to the relay connected to the output 5 (OUT5), it is connected directly to the external voltage.
