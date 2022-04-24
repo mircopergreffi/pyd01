@@ -1,5 +1,5 @@
 esphome:
-  name: "pyd01"
+  name: "pyd01_rev10"
   # Automatically add the mac address to the name
   # so you can use a single firmware for all devices
   name_add_mac_suffix: true
@@ -7,8 +7,8 @@ esphome:
   # This will allow for (future) project identification,
   # configuration and updates.
   project:
-    name: pyd.pyd01
-    version: "1.0.0"
+    name: pyd.pyd01_rev10
+    version: "1.0"
   
   # Boot sound
   on_boot:
