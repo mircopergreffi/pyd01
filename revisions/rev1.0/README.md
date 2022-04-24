@@ -34,7 +34,7 @@ Pay attention to the relay connected to the output 5 (OUT5), it is connected dir
 When closed, the external voltage is provided to OUT5. Additionally, input 5 (IN5) can detected
 wheter there is a low-resistance path connected to OUT5. This is useful with some doors because they carry
 power to the lock mechanism with pins in the door frame, when the door is opened the circuit is broken and IN5
-can detect this in order to detect the status of the door (opened or closed) without additional sensors.
+can detect whether the door is opened or closed without additional sensors.
 
 If you want to "claim back" IN5 you have to unsolder diode D10 (check schematics).
 
