@@ -31,7 +31,7 @@ The relays can switch loads up to 250VAC/5A and 30VDC/3A (Omron G5NB-1A-E).
 This are outputs (OUT3, OUT4, OUT5, OUT7, OUT8, OUT9, OUT10)
 
 Pay attention to the relay connected to the output 5 (OUT5), it is connected directly to the external voltage.
-When closed, the external voltage is provided OUT5. Additionally, input 5 (IN5) can detected
+When closed, the external voltage is provided to OUT5. Additionally, input 5 (IN5) can detected
 wheter there is a low-resistance path connected to OUT5. This is useful with some doors because they carry
 power to the lock mechanism with pins in the door frame, when the door is opened the circuit is broken and IN5
 can detect this in order to detect the status of the door (opened or closed) without additional sensors.
