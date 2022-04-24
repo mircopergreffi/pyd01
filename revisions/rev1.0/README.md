@@ -53,7 +53,12 @@ The maximum resistance value is:
 The minimum resistance value is:
 `R_min[kOhm] = (V_ext[V] - 1.2V) / (5mA)`
 
-Then you can choose a resistor with a standard value in between them.
+Then you can choose a resistor with a resistance in between them (higher is preferred).
+
+Last, check that the power the resistor have to dissipate is lower than its rated maximum power. You can calculate the power with the formula:
+`P[mW] = (V_ext[V] - 1.2V)^2 / R[kOhm]`
+
+where `R` is the value of the resistor you chose.
 
 ## I2C and SPI Headers
 The board has two header for digital communication. They are standard headers with a pitch of 2.54mm (0.1 inch).
