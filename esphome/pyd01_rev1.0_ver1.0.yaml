@@ -37,7 +37,7 @@ ota:
 
 # This should point to the public location of this yaml file.
 dashboard_import:
-  package_import_url: github://mircopergreffi/pyd01/esphome/pyd01_rev1.0_ver1.0.yaml
+  package_import_url: https://raw.githubusercontent.com/mircopergreffi/pyd01/main/esphome/pyd01_rev1.0_ver1.0.yaml
 
 wifi:
   ap:
