@@ -1,8 +1,5 @@
-substitutions:
-  name: "pyd01"
-
 esphome:
-  name: "${name}"
+  name: "pyd01"
   # Automatically add the mac address to the name
   # so you can use a single firmware for all devices
   name_add_mac_suffix: true
@@ -10,12 +7,13 @@ esphome:
   # This will allow for (future) project identification,
   # configuration and updates.
   project:
-    name: esphome.pyd01
-    version: "rev1.0_ver1.0"
+    name: pyd.pyd01
+    version: "1.0.0"
   
   # Boot sound
   on_boot:
     then:
+      - delay: 3s
       - rtttl.play: 'scale_up:d=32,o=5,b=100:c,c#,d#,e,f#,g#,a#,b'
 
 # Board configuration
@@ -37,7 +35,7 @@ ota:
 
 # This should point to the public location of this yaml file.
 dashboard_import:
-  package_import_url: https://raw.githubusercontent.com/mircopergreffi/pyd01/main/esphome/pyd01_rev1.0_ver1.0.yaml
+  package_import_url: github://mircopergreffi/pyd01/esphome/pyd01_rev1.0_ver1.0.yaml
 
 wifi:
   ap:
