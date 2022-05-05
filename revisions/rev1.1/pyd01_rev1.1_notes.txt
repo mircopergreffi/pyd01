@@ -6,6 +6,7 @@ TODO:
   - Add short circuit protection
   - Add reverse voltage protection
   - Add resistor placeholder for Opto Outputs
+  - Add diode across OUT5 terminals (protection against inductive loads)
 
 Changelog:
   - Added polarity labels on EXT
