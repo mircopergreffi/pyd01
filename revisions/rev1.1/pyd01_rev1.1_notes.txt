@@ -40,8 +40,6 @@ Validation:
     - Opto Outputs
     - Opto Inputs
     - External Antenna
-    - Ambient Light Sensor
-    - Temperature and Humidity Sensor
 ________________
 
 Notes:
